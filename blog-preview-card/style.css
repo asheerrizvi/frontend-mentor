@@ -37,14 +37,16 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-* {
   margin: 0;
 }
 
-html {
-  font-size: 16px;
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
 body {
@@ -79,9 +81,13 @@ main {
   box-shadow: 8px 8px 0px 0px #000;
 }
 
-.card__image {
+.card__image,
+.card__content,
+.card__title {
   width: 100%;
-  aspect-ratio: auto;
+}
+
+.card__image {
   border-radius: var(--rounded-lg);
 }
 
@@ -103,7 +109,7 @@ main {
   color: var(--color-gray-500);
 }
 
-.tag {
+.card__tag {
   display: block;
   width: fit-content;
   padding: var(--spacing-50) var(--spacing-150);
@@ -114,7 +120,7 @@ main {
   color: var(--color-gray-950);
 }
 
-.metadata {
+.card__metadata {
   font-size: var(--text-xs);
   font-weight: var(--font-medium);
   color: var(--color-gray-950);
@@ -146,11 +152,11 @@ main {
     font-size: var(--text-base);
   }
 
-  .tag {
+  .card__tag {
     font-size: var(--text-sm);
   }
 
-  .metadata {
+  .card__metadata {
     font-size: var(--text-sm);
   }
 }
