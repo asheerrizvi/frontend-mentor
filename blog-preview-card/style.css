@@ -101,6 +101,12 @@ main {
   font-size: var(--text-xl);
   font-weight: var(--font-extrabold);
   color: var(--color-gray-950);
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: var(--color-yellow);
+  transition: color 0.2s ease;
 }
 
 .card__description {
