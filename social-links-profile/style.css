@@ -93,6 +93,7 @@ main {
 .social-card__location {
   font-weight: var(--font-bold);
   color: var(--color-green);
+  text-align: center;
 }
 
 .social-card__links {
